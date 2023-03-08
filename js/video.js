@@ -9,7 +9,10 @@ function init(){
             $("#enllaç_video").attr("href", './video.html');   
 
             $("#enllaç_pral").removeClass("active");
+            $("#enllaç_pral").removeAttr("aria-current");
+            
             $("#enllaç_video").addClass("active");
+            $("#enllaç_video").attr("aria-current", "pagina actual");
         });
 
         const params = new Proxy(new URLSearchParams(window.location.search), {
@@ -32,14 +35,20 @@ function loadVideo(value){
             case 0:
                 $('#titol').html('Aprenent anglès ballant');
                 $('#video').attr('src', '../assets/videos/Aprenent anglès ballant.mp4');
+                $('#video').attr('title', 'Aprenent anglès ballant');
+                $('#subs').attr('src', '../assets/subtitols/subs-video1.vtt');
                 break;
             case 1:
                 $('#titol').append('Space Invaders');
                 $('#video').attr('src', '../assets/videos/Space Invaders.mp4');
+                $('#video').attr('title', 'Space Invaders');
+                $('#subs').attr('src', '../assets/subtitols/subs-video2.vtt');
                 break;
             case 2:
                 $('#titol').append('Treball per projectes');
                 $('#video').attr('src', '../assets/videos/treball per projectes.mp4');
+                $('#video').attr('title', 'Treball per projectes');
+                $('#subs').attr('src', '../assets/subtitols/subs-video3.vtt');
                 break;
             default:
                 loadLlista();
