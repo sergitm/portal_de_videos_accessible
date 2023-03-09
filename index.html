@@ -23,19 +23,17 @@
     </div>
 
     <section id="main" class="container my-5 d-flex align-items-center justify-content-center">
-        <div class="bg-dark text-white rounded rounded-3">
+        <div class="bg-dark text-white rounded rounded-3" tabindex="0">
             <h1 class="d-flex justify-content-center">Accessibilitat</h1>
             <h2 class="d-flex justify-content-center my-4">Explicació</h2>
-            <p class="mx-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum itaque quod exercitationem
-                facilis, accusamus temporibus, velit praesentium provident delectus non totam tempore. Voluptas maiores
-                eveniet repudiandae expedita. Mollitia, maxime nesciunt?</p>
-                <p class="mx-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid nostrum quibusdam sint,
-                    unde magni ullam perspiciatis. Aliquam quo quam soluta atque. Esse earum corrupti quis, modi
-                voluptatibus quibusdam voluptatem assumenda?
-            </p>
-            <p class="mx-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus harum error non, ratione
-                nobis ex asperiores facere numquam assumenda a modi temporibus et rem aliquam blanditiis porro labore?
-                Iusto, error!</p>
+            <p class="mx-5">Primer he deshabilitat l'enfocament del logo per evitar la redundància dels enllaços al Home a l'hora de fer servir teclat pels usuaris amb lector de pantalla.</p>
+            <p class="mx-5">Després, he afegit un aria-label a totes les anchor tags que no tinguessin contingut. Les imatges (el logo de la barra de navegació i el banner inferior)
+            tenen text alteratiu. Enlloc d'utilitzar els headings en funció de la mida de la lletra, els utilitzo per ordre estructural, i després la mida ja es canvia amb estils.</p>
+            <p class="mx-5">El document HTML té idioma perquè el navegador identifiqui en quin idioma es troba la web. La tabulació està ordenada verticalment.</p>
+            <p class="mx-5">Em sembla que utilitzo una semàntica HTML adequada i descriptiva del que presenta la web. A més, el contrast és suficient perque usuaris amb visió impedida 
+            vegin el contingut de forma adequada i la mida de la lletra es prou distintiva. Els videos tenen subtítols perque siguin accessibles a usuaris amb impediments d'oída i totes les 
+            etiquetes HTML de video tenen un atribut "title" pels usuaris amb lector de pantalla i un missatge en cas de que utilitzin un navegador que no sigui compatible amb les etiquetes de video.</p>
+            <p class="mx-5">A la barra de navegació, utilitzo estils i un atribut "aria-current" per marcar sempre en quina pàgina ens trobem.</p>
                 <br>
             </div>
         </section>
